@@ -1,0 +1,14 @@
+.ipynb_checkpoints
+__pycache__
+
+#Embeddings
+Glove
+
+#dataset
+data
+
+#pickle files
+pickle_files
+
+#demo model
+copy.h5
