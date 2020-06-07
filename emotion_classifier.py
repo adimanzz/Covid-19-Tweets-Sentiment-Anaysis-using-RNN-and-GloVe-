@@ -131,7 +131,7 @@ plt.show()
 #model.save('sentiment_classifier4.h5')
 
 # Test your final model on the test set to get an unbiased estimate
-test = keras.models.load_model('sentiment_classifier4.h5')
+test = keras.models.load_model('Models/sentiment_classifier4.h5')
 loss, acc = test.evaluate(xtest, ytest)
 print(acc)
 preds = test.predict(xtest)
