@@ -2,7 +2,7 @@
 """
 Created on Sat May 30 20:08:06 2020
 
-@author: adity
+@author: aditya
 """
 
 import pandas as pd
@@ -128,16 +128,10 @@ plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
 plt.show()
 
-#model.save('sentiment_classifier.h5')
-
-#model.save('sentiment_classifier2.h5')
-
-#model.save('sentiment_classifier3.h5')
-
 #model.save('sentiment_classifier4.h5')
 
 # Test your final model on the test set to get an unbiased estimate
-test = keras.models.load_model('copy.h5')
+test = keras.models.load_model('sentiment_classifier4.h5')
 loss, acc = test.evaluate(xtest, ytest)
 print(acc)
 preds = test.predict(xtest)
